@@ -55,7 +55,7 @@ func getFromDatabase(w http.ResponseWriter, ID string) {
 		fmt.Fprintln(w, "ID: "+strconv.Itoa(car.ID))
 		fmt.Fprintln(w, "Brand: "+car.Brand)
 		fmt.Fprintln(w, "Model: "+car.Model)
-		fmt.Fprintln(w, "HorsePower: "+strconv.Itoa(car.HorsePower))
+		fmt.Fprintln(w, "HorsePowerHola: "+strconv.Itoa(car.HorsePower))
 		log.Printf("Car selected: %+v\n", car)
 	}
 	if !hasResults {
