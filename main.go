@@ -66,7 +66,7 @@ func getFromDatabase(w http.ResponseWriter, ID string) {
 }
 
 func main() {
-	fmt.Println("GET Server Running...")
+	fmt.Println("GET Server Running...2")
 	http.HandleFunc("/service/v1/cars/", carGetterHandler)
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
